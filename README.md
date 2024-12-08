@@ -140,10 +140,6 @@ git push origin feature-name
 
 📊 Repository Details
 
-Git Clone Link:
-
-git@github.com:GourangaDasSamrat/Flip-Coin-Game.git
-
 Technologies Used: HTML, CSS, JavaScript
 
 License: MIT
