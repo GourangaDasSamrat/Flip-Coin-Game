@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Coin Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎲 Flip Coin Game</h1>
+            <button id="theme-toggle">🌙 Switch Theme</button>
+        </header>
+        <p>Choose Heads or Tails, flip the coin, and try your luck!</p>
+        <div class="scoreboard">
+            <p>Wins: <span id="wins">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
+        </div>
+        <div class="controls">
+            <label for="flip-count">Number of Flips:</label>
+            <input type="number" id="flip-count" min="1" max="10" value="1">
+        </div>
+        <div class="buttons">
+            <button id="heads">Heads</button>
+            <button id="tails">Tails</button>
+        </div>
+        <div class="coin">
+            <img id="coin-image" src="heads.png" alt="Coin">
+        </div>
+        <div class="result">
+            <p id="result"></p>
+        </div>
+        <button id="flip-again">Flip Again</button>
+        <audio id="flip-sound" src="flip.mp3"></audio>
+    </div>
+    <footer>
+        <p>Developed by Gouranga Das Samrat © 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

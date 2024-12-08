@@ -1,0 +1,120 @@
+:root {
+    --background-light: #f4f4f4;
+    --background-dark: #121212;
+    --text-light: #333;
+    --text-dark: #ffffff;
+    --primary-light: #4CAF50;
+    --primary-dark: #00695c;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--primary-light);
+}
+
+header button {
+    background-color: var(--primary-light);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: var(--primary-dark);
+}
+
+.scoreboard, .controls {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+input[type="number"] {
+    padding: 5px;
+    font-size: 1rem;
+    width: 60px;
+    margin-left: 10px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: var(--primary-light);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons button:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.1);
+}
+
+.coin img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: spin 1s ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+body.dark-mode header h1 {
+    color: var(--primary-dark);
+}
+
+body.dark-mode header button {
+    background-color: var(--primary-dark);
+}
+
+body.dark-mode .buttons button {
+    background-color: var(--primary-dark);
+}
