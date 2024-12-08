@@ -22,6 +22,10 @@ Get a quick look at the Flip Coin Game in action! 🎮
 
 
 
+https://github.com/user-attachments/assets/195617dd-dcc6-4007-a0fc-39f8e55c5fc3
+
+
+
 ---
 
 ## 🚀 **Getting Started**  
